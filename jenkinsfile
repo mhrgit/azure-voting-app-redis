@@ -1,11 +1,11 @@
 pipeline {
     agent any
-
     stages {
-        stage('Verify Branch')
+        stage('Verify Branch') {
             steps {
                 echo 'This step verifies the branch'
                 echo '$GIT_BRANCH'
             }   
+    }
     }
 }
